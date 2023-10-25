@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikishima Real Estate Agency</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2558942418.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="container header">
+        <img src="./svg/logo.svg" alt="Shikishima" class="logo">       
+        <nav class="navbar">
+            <ul class="list navbar__list">
+                <li class="list__item">
+                    <a class="link list__link" href="#home">Home</a>
+                </li>
+                <li class="list__item">
+                    <a class="link list__link" href="#about">About us</a>
+                </li>
+                <li class="list__item">
+                    <a class="link list__link" href="#services">Services</a>
+                </li>
+                <li class="list__item">
+                    <a class="link list__link" href="#listings">Listings</a>
+                </li>
+                <li class="list__item">
+                    <a class="link list__link" href="#agents">Agents</a>
+                </li>
+                <li class="list__item">
+                    <a class="link list__link" href="#find">Find Us</a>
+                </li>
+                <li class="list__item">
+                    <a class="link link__compound" href="#">
+                        <i class="fa-regular fa-user link__icon"></i>
+                        <span class="link__caption">Sign in/Register</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars menu-button"></i>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="slider">
+                <div class="slider__content">
+                    <div class="container slider__slide active">
+                        <img class="hero__picture" src="images/hero1.png" alt="">
+                        <div class="hero__content animate">
+                            <h1 class="hero__title">Welcome to Shikishima Real Estate Agency</h1>
+                            <p class="hero__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro quam facilis accusantium provident molestiae illo doloremque autem, ipsam omnis quasi rem voluptatibus.</p>
+                            <a href="#about" class="button button_lg button_colored">Explore</a>
+                        </div>
+                    </div>
+                    <div class="container slider__slide">
+                        <img class="hero__picture" src="images/hero2.jpg" alt="">
+                        <div class="hero__content animate">
+                            <h1 class="hero__title">We will help you to buy, sell, or rent a home</h1>
+                            <p class="hero__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro quam facilis accusantium provident molestiae illo doloremque autem, ipsam omnis quasi rem voluptatibus.</p>
+                            <a href="#listings" class="button button_lg button_colored">Check offers</a>
+                        </div>
+                    </div>
+                    <div class="container slider__slide">
+                        <img class="hero__picture" src="images/hero3.jpg" alt="">
+                        <div class="hero__content animate">
+                            <h1 class="hero__title">Find your house of dream with us</h1>
+                            <p class="hero__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro quam facilis accusantium provident molestiae illo doloremque autem, ipsam omnis quasi rem voluptatibus.</p>
+                            <a href="#" class="button button_lg button_colored">Start now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="container bg-light about" id="about">
+            <div class="about__content">
+                <img class="about__image" src="./images/about.jpeg" alt="about">
+            </div>
+            <div class="about__content animate">
+                <div class="section__header align-left">
+                    <span class="section__suptitle">About us</span>
+                    <h2 class="section__name">Company Overview</h2>
+                </div>
+                <p class="section__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam hic quis impedit voluptatibus. Odit, ipsa. Maxime magni vel impedit sequi, non animi. Molestias perferendis hic ducimus ab, aliquid laboriosam ipsa. Aperiam, atque modi aspernatur consequatur enim ut iusto nobis molestias ab ex minima veniam distinctio saepe optio ipsam. Minus id molestiae quaerat dolorum obcaecati reprehenderit temporibus tenetur enim repudiandae voluptatum. Nobis corporis velit voluptatem quod esse iusto temporibus voluptatum a natus repudiandae officia sapiente quisquam maxime, modi perspiciatis.</p>
+                <h3 class="section__paragraph-header">Our mission</h3>
+                <p class="section__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam hic quis impedit voluptatibus. Odit, ipsa. Maxime magni vel impedit sequi, non animi. Molestias perferendis hic ducimus ab, aliquid laboriosam ipsa. Aperiam, atque modi aspernatur consequatur enim ut iusto nobis molestias ab ex minima veniam distinctio saepe optio ipsam.</p>
+                <h3 class="section__paragraph-header">Our vision</h3>
+                <p class="section__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam hic quis impedit voluptatibus. Odit, ipsa. Maxime magni vel impedit sequi, non animi. Molestias perferendis hic ducimus ab, aliquid laboriosam ipsa. Aperiam, atque modi aspernatur consequatur enim ut iusto nobis molestias ab ex minima veniam distinctio saepe optio ipsam. </p>
+                <a href="#" class="button button_lg button_colored">Read more...</a>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="container bg-light features" id="services">
+            <div class="section__header align-center">
+                <span class="section__suptitle">Services</span>
+                <h2 class="section__name">What we do</h2>
+            </div>
+            <div class="features__container animate">
+                <div class="card feature">
+                    <h3 class="feature__header">Buy Home</h3>
+                    <p class="feature__caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem id a non sit nulla, sunt vitae modi facere minus aperiam doloribus ut perferendis eum, unde hic nobis reiciendis, sequi deserunt.</p>
+                    <a href="#" class="button button_md">Read more...</a>
+                </div>
+                <div class="card feature">
+                    <h3 class="feature__header">Sell Home</h3>
+                    <p class="feature__caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem id a non sit nulla, sunt vitae modi facere minus aperiam doloribus ut perferendis eum, unde hic nobis reiciendis, sequi deserunt.</p>
+                    <a href="#" class="button button_md">Read more...</a>
+                </div>
+                <div class="card feature">
+                    <h3 class="feature__header">Rent Home</h3>
+                    <p class="feature__caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem id a non sit nulla, sunt vitae modi facere minus aperiam doloribus ut perferendis eum, unde hic nobis reiciendis, sequi deserunt.</p>
+                    <a href="#" class="button button_md">Read more...</a>
+                </div>
+            </div>
+        </section>
+        <!-- Listings Section -->
+        <section class="container bg-light listings" id="listings">
+            <div class="section__header align-center">
+                <span class="section__suptitle">Listings</span>
+                <h2 class="section__name">What we can offer to you</h2>
+            </div>
+            <div class="ribbon">
+                <div class="ribbon__content">
+                    <div class="card listing">
+                        <div class="listing__top">
+                            <img class="listing__picture" src="./images/listing1.jpg" alt="listing">
+                            <div class="listing__labels">
+                                <span class="listing__label">For Rent</span>
+                                <span class="listing__label">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="listing__bottom">
+                            <div class="listing__info-upper">
+                                <span class="listing__price">JPY 135.000/mo.</span>
+                                <div class="listing__connect">
+                                    <i class="fa-solid fa-heart button__icon"></i>
+                                    <i class="fa-solid fa-envelope button__icon"></i>
+                                    <i class="fa-solid fa-phone button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="listing__info-middle">
+                                <h3 class="listing__title">Apartments for rent</h3>
+                                <p class="listing__text">2-chōme-2-11 Nobuto, Chuo Ward, Chiba, 260-0032</p>
+                                <div class="listing__indicators">
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-expand listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">28m<sup>2</sup></span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bed listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bed</span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bath listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bath</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing__info-lower">
+                                <a href="#" class="button button_sm">Request info...</a>
+                                <a href="#" class="button button_sm">View details...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card listing">
+                        <div class="listing__top">
+                            <img class="listing__picture" src="./images/listing1.jpg" alt="listing">
+                            <div class="listing__labels">
+                                <span class="listing__label">For Rent</span>
+                                <span class="listing__label">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="listing__bottom">
+                            <div class="listing__info-upper">
+                                <span class="listing__price">JPY 135.000/mo.</span>
+                                <div class="listing__connect">
+                                    <i class="fa-solid fa-heart button__icon"></i>
+                                    <i class="fa-solid fa-envelope button__icon"></i>
+                                    <i class="fa-solid fa-phone button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="listing__info-middle">
+                                <h3 class="listing__title">Apartments for rent</h3>
+                                <p class="listing__text">2-chōme-2-11 Nobuto, Chuo Ward, Chiba, 260-0032</p>
+                                <div class="listing__indicators">
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-expand listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">28m<sup>2</sup></span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bed listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bed</span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bath listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bath</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing__info-lower">
+                                <a href="#" class="button button_sm">Request info...</a>
+                                <a href="#" class="button button_sm">View details...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card listing">
+                        <div class="listing__top">
+                            <img class="listing__picture" src="./images/listing1.jpg" alt="listing">
+                            <div class="listing__labels">
+                                <span class="listing__label">For Rent</span>
+                                <span class="listing__label">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="listing__bottom">
+                            <div class="listing__info-upper">
+                                <span class="listing__price">JPY 135.000/mo.</span>
+                                <div class="listing__connect">
+                                    <i class="fa-solid fa-heart button__icon"></i>
+                                    <i class="fa-solid fa-envelope button__icon"></i>
+                                    <i class="fa-solid fa-phone button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="listing__info-middle">
+                                <h3 class="listing__title">Apartments for rent</h3>
+                                <p class="listing__text">2-chōme-2-11 Nobuto, Chuo Ward, Chiba, 260-0032</p>
+                                <div class="listing__indicators">
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-expand listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">28m<sup>2</sup></span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bed listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bed</span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bath listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bath</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing__info-lower">
+                                <a href="#" class="button button_sm">Request info...</a>
+                                <a href="#" class="button button_sm">View details...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card listing">
+                        <div class="listing__top">
+                            <img class="listing__picture" src="./images/listing1.jpg" alt="listing">
+                            <div class="listing__labels">
+                                <span class="listing__label">For Rent</span>
+                                <span class="listing__label">2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="listing__bottom">
+                            <div class="listing__info-upper">
+                                <span class="listing__price">JPY 135.000/mo.</span>
+                                <div class="listing__connect">
+                                    <i class="fa-solid fa-heart button__icon"></i>
+                                    <i class="fa-solid fa-envelope button__icon"></i>
+                                    <i class="fa-solid fa-phone button__icon"></i>
+                                </div>
+                            </div>
+                            <div class="listing__info-middle">
+                                <h3 class="listing__title">Apartments for rent</h3>
+                                <p class="listing__text">2-chōme-2-11 Nobuto, Chuo Ward, Chiba, 260-0032</p>
+                                <div class="listing__indicators">
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-expand listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">28m<sup>2</sup></span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bed listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bed</span>
+                                    </div>
+                                    <div class="listing__indicator">
+                                        <i class="fa-solid fa-bath listing__indicator-icon"></i>
+                                        <span class="listing__indicator-data">1 bath</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing__info-lower">
+                                <a href="#" class="button button_sm">Request info...</a>
+                                <a href="#" class="button button_sm">View details...</a>
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+            </div>
+            <a href="#" class="button button_lg button_colored">More offers...</a>
+        </section>
+        <!-- Agents Section -->
+        <section class="container bg-light agents" id="agents">
+            <div class="section__header align-center">
+                <span class="section__suptitle">Agents</span>
+                <h2 class="section__name">Those who works for you</h2>
+            </div>
+            <div class="ribbon ribbon_agents">
+                <div class="ribbon__content agents__content">
+                    <div class="card agent">
+                        <div class="agent__top">
+                            <div class="agent__data">
+                                <h3 class="agent__name">Natsumori Kaoru</h3>
+                                <span class="agent__position">Agent</span>
+                            </div>
+                            <div class="agent__connect">
+                                <i class="fa-solid fa-envelope button__icon"></i>
+                                <i class="fa-solid fa-phone button__icon"></i>
+                            </div>
+                        </div>
+                        <div class="agent__middle">
+                            <img class="agent__photo" src="./images/agents/agent1.jpg" alt="Natsumori Kaoru">
+                        </div>
+                        <div class="agent__bottom">
+                            <p class="agent__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit, que praesentium, voluptatum velit distinctio modi rerum sint eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam a illum veniam, labore quo voluptatum velit deserunt, quaerat praesentium sed cupiditate vitae? Deserunt in sequi iure possimus. Consequuntur, quaerat ea!
+                            </p>
+                            <div class="agent__social">
+                                <i class="fa-brands fa-linkedin button__social"></i>
+                                <i class="fa-brands fa-instagram button__social"></i>
+                                <i class="fa-brands fa-facebook button__social"></i>
+                                <i class="fa-brands fa-twitter button__social"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card agent">
+                        <div class="agent__top">
+                            <div class="agent__data">
+                                <h3 class="agent__name">Kashiwazaki Ayumi</h3>
+                                <span class="agent__position">Agent</span>
+                            </div>
+                            <div class="agent__connect">
+                                <i class="fa-solid fa-envelope button__icon"></i>
+                                <i class="fa-solid fa-phone button__icon"></i>
+                            </div>
+                        </div>
+                        <div class="agent__middle">
+                            <img class="agent__photo" src="./images/agents/agent2.jpg" alt="Natsumori Kaoru">
+                        </div>
+                        <div class="agent__bottom">
+                            <p class="agent__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit, que praesentium, voluptatum velit distinctio modi rerum sint eum.
+                            </p>
+                            <div class="agent__social">
+                                <i class="fa-brands fa-linkedin button__social"></i>
+                                <i class="fa-brands fa-instagram button__social"></i>
+                                <i class="fa-brands fa-facebook button__social"></i>
+                                <i class="fa-brands fa-twitter button__social"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card agent">
+                        <div class="agent__top">
+                            <div class="agent__data">
+                                <h3 class="agent__name">Ishibashi Hinako</h3>
+                                <span class="agent__position">Agent</span>
+                            </div>
+                            <div class="agent__connect">
+                                <i class="fa-solid fa-envelope button__icon"></i>
+                                <i class="fa-solid fa-phone button__icon"></i>
+                            </div>
+                        </div>
+                        <div class="agent__middle">
+                            <img class="agent__photo" src="./images/agents/agent3.jpg" alt="Natsumori Kaoru">
+                        </div>
+                        <div class="agent__bottom">
+                            <p class="agent__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit, que praesentium, voluptatum velit distinctio modi rerum sint eum.
+                            </p>
+                            <div class="agent__social">
+                                <i class="fa-brands fa-linkedin button__social"></i>
+                                <i class="fa-brands fa-instagram button__social"></i>
+                                <i class="fa-brands fa-facebook button__social"></i>
+                                <i class="fa-brands fa-twitter button__social"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card agent">
+                        <div class="agent__top">
+                            <div class="agent__data">
+                                <h3 class="agent__name">Ishibashi Hinako</h3>
+                                <span class="agent__position">Agent</span>
+                            </div>
+                            <div class="agent__connect">
+                                <i class="fa-solid fa-envelope button__icon"></i>
+                                <i class="fa-solid fa-phone button__icon"></i>
+                            </div>
+                        </div>
+                        <div class="agent__middle">
+                            <img class="agent__photo" src="./images/agents/agent3.jpg" alt="Natsumori Kaoru">
+                        </div>
+                        <div class="agent__bottom">
+                            <p class="agent__caption">Lorem, ipsum dolor sit amet consectetur adipisicing elit, que praesentium, voluptatum velit distinctio modi rerum sint eum.
+                            </p>
+                            <div class="agent__social">
+                                <i class="fa-brands fa-linkedin button__social"></i>
+                                <i class="fa-brands fa-instagram button__social"></i>
+                                <i class="fa-brands fa-facebook button__social"></i>
+                                <i class="fa-brands fa-twitter button__social"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacts Section -->
+        <section class="container bg-light contacts" id="find">
+            <div class="contacts__padding">
+                <div class="section__header align-center">
+                    <span class="section__suptitle">Contact Us</span>
+                    <h2 class="section__name">You question us, we answer you</h2>
+                </div>
+                <div class="contacts__bar">
+                    <div class="contacts__group">
+                        <div class="contact">
+                            <i class="fa-solid fa-map-location-dot contact__icon"></i>
+                            <div class="contact__captions">
+                                <span class="contact__caption">1-chōme-4-20 Konakadai, Inage Ward, Chiba, 263-0043</span>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <i class="fa-solid fa-phone contact__icon"></i>
+                            <div class="contact__captions">
+                                <span class="contact__caption">+81 410 1234-5678</span>
+                                <span class="contact__caption">+81 410 1234-5678</span>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <i class="fa-solid fa-at contact__icon"></i>
+                            <div class="contact__captions">
+                                <span class="contact__caption">katakiritsubasa@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button_md button_colored">Contact us</button>
+                </div>
+            </div>
+            <div class="contacts__location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.6627131434858!2d140.09526243326!3d35.636332970094465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228383dd83f8a5%3A0x60bd87f71b2732d9!2z0K_Qv9C-0L3QuNGPLCDjgJIyNjMtMDA0MyBDaGliYSwgSW5hZ2UgV2FyZCwgS29uYWthZGFpLCAxLWNoxY1tZeKIkjTiiJIyMCDjgqTjgqrjg7PnqLLmr5vlupc!5e0!3m2!1sru!2sby!4v1670587519319!5m2!1sru!2sby" class="contacts__frame" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="container bg-dark footer">
+        <div class="footer__menus">
+            <div class="column column_wide">
+                <img src="./svg/logo.svg" alt="Shikishima" class="logo">       
+                <p class="column__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos dolores recusandae eligendi, veritatis unde odio perspiciatis perferendis doloremque corrupti minus distinctio sed. Doloribus natus fuga ipsa aliquam. Ab et vero aliquam, hic quod sapiente, quisquam sint pariatur voluptate repudiandae quas, deleniti quae iste blanditiis aut atque dolorem exercitationem a repellat.</p>
+                <div class="column__social">
+                    <i class="fa-brands fa-linkedin button__social_nounderscore"></i>
+                    <i class="fa-brands fa-instagram button__social_nounderscore"></i>
+                    <i class="fa-brands fa-facebook button__social_nounderscore"></i>
+                    <i class="fa-brands fa-twitter button__social_nounderscore"></i>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="column__header">Site map</h3>
+                <ul class="list column__list">
+                    <li class="list__item"><a href="#home" class="link link__simple">Home</a></li>
+                    <li class="list__item"><a href="#about" class="link link__simple">About</a></li>
+                    <li class="list__item"><a href="#features" class="link link__simple">Features</a></li>
+                    <li class="list__item"><a href="#listings" class="link link__simple">Listings</a></li>
+                    <li class="list__item"><a href="#agents" class="link link__simple">Agents</a></li>
+                    <li class="list__item"><a href="#find" class="link link__simple">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="column__header">Extra Links</h3>
+                <ul class="list column__list">
+                    <li class="list__item"><a href="#" class="link link__simple">Blog</a></li>
+                    <li class="list__item"><a href="#" class="link link__simple">FAQs</a></li>
+                    <li class="list__item"><a href="#" class="link link__simple">Support</a></li>
+                    <li class="list__item"><a href="#" class="link link__simple">Terms and Conditions</a></li>
+                    <li class="list__item"><a href="#" class="link link__simple">Privacy Policy</a></li>
+                    <li class="list__item"><a href="#" class="link link__simple">Legal Policies</a></li>
+                </ul>
+            </div>
+            <div class="column column_wide">
+                <h3 class="column__header">Subscribe to our Newsletter</h3>
+                <form class="form-subscribe" method="POST">
+                    <input type="text" class="input" placeholder="mail@domain.com">
+                    <button type="submit" class="button button_lg button_colored button_sub">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <span class="copyright">Copyright &copy; 2022 Shikishima Real Estate Agency. All Rights Reserved</span>
+            <span class="attribution">Site mockup is developed by <a href="#" class="link link__simple">Katakiri Tsubasa</a></span>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script type="module" src="./js/app.min.js"></script>
+</body>
+</html>

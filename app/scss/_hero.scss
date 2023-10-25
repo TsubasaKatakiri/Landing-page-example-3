@@ -1,0 +1,190 @@
+@import '_vars.scss';
+
+.hero{
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    
+    &__picture{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    &__content{
+        color: $text4;
+        width: 950px;
+    }
+
+    &__title{
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 96px;
+        margin: 0;
+    }
+
+    &__caption{
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &__control-left{
+        position: absolute;
+        top: 50%;
+        left: 1.125rem;
+        font-size: 2.25rem;
+        color: $text3;
+        transform: translateY(-50%);
+    }
+
+    &__control-right{
+        position: absolute;
+        top: 50%;
+        right: 1.125rem;
+        font-size: 2.25rem;
+        color: $text3;
+        transform: translateY(-50%);
+    }
+
+    &__control-left:hover, &__control-right:hover{
+        color: $accent1;
+    }
+
+    &__content{
+        transition: box-shadow 0.5s ease;
+    }
+
+    &__marker{
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transform: translateX(-50%);
+    }
+
+    &__slide, &__content{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slide{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center !important;
+
+        &.active{
+            display: flex;
+        }
+    }
+}
+
+.marker{
+    height: 12px;
+    width: 100px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: $background5;
+    transition: all 0.25s ease;
+
+    &:hover{
+        background-color: $accent1;
+    }
+
+    &.active{
+        background-color: $accent1;
+    }
+}
+
+.hero__content.animate_active{
+    animation: heroAppear 1s ease;
+}
+
+@keyframes heroAppear{
+    0%{
+        transform:translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media(max-width: $laptop){
+    .hero{
+        &__content{
+            width: 640px;
+        }
+    
+        &__title{
+            font-size: 44px;
+            line-height: 68px;
+        }
+    
+        &__caption{
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+}
+
+
+
+@media(max-width: $tablet){
+    .hero{
+        text-align: center;
+
+        &__content{
+            width: 100%;
+        }
+    
+        &__title{
+            font-size: 40px;
+            line-height: 60px;
+        }
+    
+        &__caption{
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
+
+    .slider{
+        &__marker{
+            display: none;
+        }
+    }
+}
+
+
+@media(max-width: $mobile){
+    .hero{  
+        &__title{
+            font-size: 32px;
+            line-height: 48px;
+        }
+    
+        &__caption{
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import '_vars.scss';
+
+.ribbon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    &__button-left{
+        display: none !important;
+    }
+
+    &__button-right{
+        display: none !important;
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: $laptop){
+    .ribbon{
+        &__button-left{
+            display: flex !important;
+            position: absolute;
+            top: 50%;
+            left: -3rem;
+            transform: translateY(-50%);
+            z-index: 1000;
+            margin-left: 0;
+        }
+    
+        &__button-right{
+            display: flex !important;
+            position: absolute;
+            top: 50%;
+            right: -3rem;
+            transform: translateY(-50%);
+            z-index: 1000;
+            margin-left: 0;
+        }
+    }
+}

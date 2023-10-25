@@ -1,0 +1,74 @@
+@import '_vars.scss';
+@import '_mixins.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.bg-light{
+    background-color: $background2;
+}
+
+.bg-dark{
+    background-color: $background7;
+}
+
+.link{
+    text-decoration: none;
+
+    &__simple{
+        @include nav-link;
+    }
+}
+
+
+.list{
+    list-style-type: none;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    padding: 2.5rem 3.75rem;
+}
+
+
+.align-left{
+    text-align: left;
+}
+
+.align-center{
+    text-align: center;
+}
+
+
+@media(max-width: $tablet){
+    .container{
+        padding: 5rem 1.25rem;
+    }
+}
+
+
+/* Modules imports */
+@import '_button.scss';
+@import '_section.scss';
+@import '_card.scss';
+@import '_ribbon.scss';
+@import '_header.scss';
+@import '_hero.scss';
+@import '_about.scss';
+@import '_features.scss';
+@import '_listings.scss';
+@import '_agents.scss';
+@import '_contacts.scss';
+@import '_footer.scss';

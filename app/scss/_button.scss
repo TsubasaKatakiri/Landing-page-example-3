@@ -1,0 +1,131 @@
+@import '_vars.scss';
+@import '_mixins.scss';
+
+.button{
+    font-weight: 700;
+    color: $text4;
+    background-color: $background5;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0.625rem;
+    outline: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &_sm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    &_md{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    &_lg{
+        padding: 1rem 5rem;
+        text-transform: uppercase;
+    }
+
+    &:hover{
+        background-color: $accent1;
+    }
+
+    &_colored{
+        background-color: $accent1;
+
+        &:hover{
+            background-color: $accent2;
+        }
+    }
+
+    &__icon{
+        background-color: $background3;
+        color: $text4;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover{
+            background-color: $accent1;
+        }
+    }
+
+    &__social{
+        color: $text5;
+        @include social-button;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        &:hover{
+            color: $accent1;
+        }
+
+        &_nounderscore{
+            color: $text4;
+            @include social-button;
+
+            &:hover{
+                color: $accent1;
+            }
+        }
+    
+        &::after{
+            content: "";
+            margin-top: 0.3125rem;
+            display: block;
+            background-color: $text4;
+            border: 0;
+            border-radius: 0.125rem;
+            width: 0%;
+            height: 0.25rem;
+            transition: all 0.25s ease;
+        }
+    
+        &:hover::after{
+            background-color: $accent1;
+            width: 100%;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+@media(max-width: $tablet){
+    .button{
+        &_lg{
+            font-size: 1.25rem;
+            padding: 1rem 3rem;
+            text-transform: uppercase;
+        }
+
+        &__icon{
+            width: 2.25rem;
+            height: 2.25rem;
+            font-size: 1.125rem;
+        }
+
+        &_sub{
+            margin-bottom: 1.25rem;
+        }
+    }
+}

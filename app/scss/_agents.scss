@@ -1,0 +1,104 @@
+@import '_vars.scss';
+
+.agents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.agent{
+    width: 24rem;
+    margin: 0.625rem 1rem;
+    user-select: none;
+    flex: 0 0 auto;
+
+    &:first-child{
+        margin-left: 0.25rem;
+    }
+
+    &:last-child{
+        margin-right: 0.25rem;
+    }
+
+    &__top{
+        width: 100%;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name{
+        font-weight: 800;
+        font-size: 1.375rem;
+        margin-bottom: 0.3125rem;
+    }
+
+    &__connect{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__middle{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    &__photo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        user-drag: none;
+        -webkit-user-drag: none;
+        transition: all 0.5s ease;
+    }
+
+    &:hover &__photo{
+        transform: scale(1.1);
+    } 
+
+    &__bottom{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    &__caption{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 0.875rem;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+
+    &__social{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+@media(min-width: $tablet){
+    .agent{
+        width: 26.5rem;
+
+        &__name{
+            font-size: 1.25rem;
+        }
+
+        &__caption{
+            font-size: 1rem;
+        }
+    }
+}

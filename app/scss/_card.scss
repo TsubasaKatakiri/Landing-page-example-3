@@ -1,0 +1,9 @@
+@import '_vars.scss';
+
+.card{
+    display: inline-block;
+    border-radius: 0.625rem;
+    background-color: $background1;
+    box-shadow: 0 0 0.625rem $background5;
+    color: $text1;
+}

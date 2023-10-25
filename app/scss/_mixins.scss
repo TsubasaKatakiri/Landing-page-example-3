@@ -1,0 +1,21 @@
+/* social button mixin */
+
+@mixin nav-link{
+    font-weight: 600;
+    font-size: 1rem;
+    color: $text4;
+    transition: color 0.25s ease;
+    cursor: pointer;
+
+    &:hover{
+        color: $accent1;
+    }
+}
+
+@mixin social-button{
+    margin-right: 48px;
+    font-size: 48px;
+    display: flex !important;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
